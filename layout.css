@@ -55,16 +55,12 @@ body {
     margin-right: auto;
 }
 
-nav {
-  display: flex;
-  justify-content: center; /* Center the navigation horizontally */
-}
-
 /* Navigation Bar Styling */
 header {
   width: 100%; /* Make sure the header takes full width */
   background-color: #fff; /* White background for the navigation bar */
   padding: 10px 0; /* Padding around the nav bar */
+  justify-content: center; /* Center the navigation horizontally */
 }
 
 /* Flexbox layout for the navigation bar */
