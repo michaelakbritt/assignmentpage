@@ -1,153 +1,121 @@
-/* Reset default styles */
+/* Global Styles */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    margin: 0;
 }
 
-/* General body styling */
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    background-color: #f8f8f7; /* Light background similar to Apple's */
-    color: #333; /* Dark text for readability */
-    line-height: 1.5;
-    padding: 0 20px; /* Padding to prevent elements from touching the edges */
+/* ==== GRID SYSTEM ==== */
+
+/* Center the grid on the page using flexbox */
+.parent-container {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    min-height: 100vh;         /* Full viewport height */
+    background: white; /* Green gradient */
 }
 
-/* Grid Container for the whole page */
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr; /* Default for mobile */
-    grid-template-rows: auto;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px;
-}
-
-/* Hero Section (Grid Item) */
-.hero {
-    grid-column: span 1; /* Span across one column */
-    text-align: center;
-}
-
-.hero img {
+/* Styling for the grid container */
+.container {
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
+    max-width: 1200px; /* Set a maximum width to prevent it from getting too wide */
+    color: white;  /* Make sure the text is white for readability */
+    background: linear-gradient(to right, rgba(0, 128, 0, 1), rgba(34, 193, 195, 1));
+    padding: 0 10px; /* Add space for border to avoid content touching sides */
 }
 
-.hero h2 {
-    font-size: 3rem;
-    color: #333;
-    font-weight: 600;
-    margin-top: 20px;
+/* Row Styles */
+.row {
+    position: relative;
+    width: 100%;
 }
 
-.hero p {
-    font-size: 1.2rem;
-    color: #555;
-    margin-top: 10px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+/* Column Styles (keeping existing widths, adjusting background and adding readability) */
+.row [class^="col"] {
+    float: left;
+    margin: 0 0;
+    min-height: 0.125rem;
+    padding: 15px;  /* Padding for spacing inside the columns */
+    box-sizing: border-box;  /* Ensure padding doesn't affect width */
+    text-align: center;  /* Center text horizontally */
 }
 
-/* Features Section (Grid Item) */
-#features {
-    grid-column: span 1; /* Span across one column */
+/* Column widths with updated RGBA color for visibility */
+.col-1 {
+    width: 8.33%;
+    background: rgba(102, 51, 153, .1);
 }
 
-.features-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+.col-2 {
+    width: 16.66%;
+    background: rgba(102, 51, 153, .2);
 }
 
-.feature-item {
-    text-align: center;
+.col-3 {
+    width: 25%;
+    background: rgba(102, 51, 153, .3);
 }
 
-.feature-item img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 10px;
+.col-4 {
+    width: 33.33%;
+    background: rgba(102, 51, 153, .4);
 }
 
-.feature-item h3 {
-    font-size: 1.3rem;
-    color: #333;
-    margin-top: 10px;
+.col-5 {
+    width: 41.67%;
+    background: rgba(102, 51, 153, .5);
 }
 
-.feature-item p {
-    font-size: 1rem;
-    color: #777;
-    margin-top: 10px;
+.col-6 {
+    width: 50%;
+    background: rgba(102, 51, 153, .5);
 }
 
-/* Pricing Section (Grid Item) */
-#pricing {
-    grid-column: span 1;
+.col-7 {
+    width: 58.33%;
+    background: rgba(102, 51, 153, .57);
 }
 
-#pricing .component {
-    background-color: #111;
-    color: white;
-    padding: 40px 20px;
-    border-radius: 12px;
-    text-align: center;
+.col-8 {
+    width: 66.67%;
+    background: rgba(102, 51, 153, .64);
 }
 
-#pricing h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 20px;
+.col-9 {
+    width: 75%;
+    background: rgba(102, 51, 153, .75);
 }
 
-button {
-    padding: 15px 30px;
-    background-color: #0071e3;
-    border: none;
-    color: white;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.col-10 {
+    width: 83.33%;
+    background: rgba(102, 51, 153, .82);
 }
 
-button:hover {
-    background-color: #005bb5;
+.col-11 {
+    width: 91.67%;
+    background: rgba(102, 51, 153, .89);
 }
 
-/* Responsive Layout for Tablets and Mobile Devices */
-@media (min-width: 768px) {
-    /* Adjust grid layout for medium screens */
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .features-container {
-        grid-template-columns: repeat(2, 1fr); /* Two columns for feature items */
-    }
+.col-12 {
+    width: 100%;
+    background: rgba(102, 51, 153, 1);
 }
 
-@media (min-width: 1024px) {
-    /* Adjust grid layout for larger screens */
-    .grid-container {
-        grid-template-columns: repeat(3, 1fr); /* Three columns for large screens */
-    }
+/* This is clearfix, clearing content after each row */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
-    .features-container {
-        grid-template-columns: repeat(3, 1fr); /* Three columns for feature items */
-    }
+/* Column heights and border for visibility */
+div [class^="col"] {
+    height: 100px; /* Fixed height for visibility */
+    border: 1px solid white;  /* White borders between columns */
+}
 
-    .hero h2 {
-        font-size: 3rem; /* Adjust headline size on larger screens */
-    }
-
-    #pricing h1 {
-        font-size: 2.5rem; /* Larger heading for pricing section */
-    }
+/* Ensure text is readable on background */
+body {
+    color: white; /* Ensure text is white for readability */
+    font-family: Arial, sans-serif; /* Set a default font */
 }
