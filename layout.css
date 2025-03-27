@@ -60,6 +60,20 @@ nav {
   justify-content: center; /* Center the navigation horizontally */
 }
 
+/* Navigation Bar Styling */
+header {
+  width: 100%; /* Make sure the header takes full width */
+  background-color: #fff; /* White background for the navigation bar */
+  padding: 10px 0; /* Padding around the nav bar */
+}
+
+/* Flexbox layout for the navigation bar */
+nav {
+  display: flex; /* Use flexbox layout */
+  justify-content: center; /* Center the nav items horizontally */
+  align-items: center; /* Center the items vertically within the bar */
+}
+
 /* Features Section */
 #features {
     padding: 50px 0;
