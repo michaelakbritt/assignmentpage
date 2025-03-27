@@ -30,6 +30,7 @@ body {
     position: relative;
     overflow: hidden;
     text-align: center;
+    justify-content: center; /* Center the navigation horizontally */
 }
 
 .hero img {
