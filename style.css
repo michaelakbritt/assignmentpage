@@ -5,12 +5,13 @@
   box-sizing: border-box;
 }
 
-/* Global Styles */
+/* General body styling */
 body {
-  font-family: 'Lora', serif; /* Use the 'Lora' font for a clean serif look */
-  color: #333; /* Dark text color for readability */
-  background-color: #f4f4f4; /* Light background color */
-  line-height: 1.6; /* Line height for readability */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    background-color: #f8f8f7; /* Light background similar to Apple's */
+    color: #333; /* Dark text for readability */
+    line-height: 1.5;
+    padding: 0 20px; /* Padding to prevent elements from touching the edges */
 }
 
 /* Navigation Bar Styles */
