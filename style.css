@@ -122,8 +122,4 @@ ul li a:hover {
   .header-text .headline {
     font-size: 36px; /* Adjust font size for headline */
   }
-
-  .header-text .author {
-    font-size: 18px; /* Adjust font size for author */
-  }
 }
