@@ -114,6 +114,8 @@ ul li a:hover {
   background-color: #fff; /* White background for the about text */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for the text box */
   border-radius: 8px; /* Rounded corners for the text box */
+  margin-bottom: 30px; /* Space below the about box */
+  width: 100%; /* Ensure full width */
 }
 
 /* Responsive Styles */
