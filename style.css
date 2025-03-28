@@ -18,6 +18,10 @@ header {
   width: 100%; /* Full width for header */
   background-color: #007aff; /* Blue background for the nav bar */
   padding: 15px 0; /* Vertical padding for spacing */
+  position: fixed; /* Fix the nav bar at the top */
+  top: 0; /* Align at the very top */
+  left: 0; /* Align to the left */
+  z-index: 1000; /* Ensure it's on top of other content */
 }
 
 nav {
@@ -51,124 +55,77 @@ ul li a:hover {
   border-radius: 5px; /* Rounded corners on hover */
 }
 
-/* Hero Section */
-#header {
-  text-align: center; /* Center the text */
-  background-color: #f5f5f5; /* Light background color for the hero section */
-  padding: 50px 20px; /* Padding around the hero section */
+/* Header Section with Image for About Page */
+.about-header {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Set height for the header section */
+  overflow: hidden; /* Hide any overflow from the image */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the content vertically */
+  margin-top: 70px; /* Push content down to avoid nav bar overlap */
 }
 
-#header h1 {
+.about-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire header */
+  filter: brightness(50%); /* Darken the image a bit to make the text more readable */
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the text */
+  text-align: center;
+  color: white; /* White text color */
+}
+
+.headline {
   font-size: 48px;
   font-weight: 700; /* Bold font for the title */
-  color: #333; /* Dark text color */
-  margin-bottom: 20px; /* Space below the title */
 }
 
-#header h2 {
+.author {
   font-size: 24px;
-  color: #007aff; /* Blue color for the subtitle */
-  margin-bottom: 20px; /* Space below the subtitle */
+  font-weight: 400; /* Regular font for the author */
 }
 
-#header p {
+/* About Section Styles */
+.outer {
+  padding: 20px;
+}
+
+.page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about {
   font-size: 18px;
-  color: #555; /* Slightly lighter text for the paragraph */
-  line-height: 1.8; /* Line height for readability */
-  margin-bottom: 30px; /* Space below the paragraph */
-}
-
-.hero img {
-  max-width: 100%; /* Make the image responsive */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Rounded corners for the image */
-  margin-bottom: 20px; /* Space below the image */
-}
-
-/* Features Section */
-#features {
-  padding: 50px 20px; /* Padding around the features section */
-  background-color: #fff; /* White background for features section */
-}
-
-#features h1 {
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 30px; /* Space below the heading */
-}
-
-.feature {
-  display: flex; /* Flex layout for the feature items */
-  justify-content: space-between; /* Space between the feature items */
-  flex-wrap: wrap; /* Wrap the items on small screens */
-}
-
-.feature-item {
-  text-align: center; /* Center align the text */
-  width: 30%; /* Set a default width for each feature item */
-  margin-bottom: 30px; /* Space below each feature item */
-}
-
-.feature-item img {
-  width: 100%; /* Make the image responsive */
-  max-width: 250px; /* Limit the max width of the image */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Rounded corners for the image */
-  margin-bottom: 15px; /* Space below the image */
-}
-
-.feature-item h3 {
-  font-size: 22px;
-  font-weight: 600; /* Bold headings */
+  line-height: 1.8;
   color: #333;
-  margin-bottom: 10px; /* Space below the heading */
-}
-
-.feature-item p {
-  font-size: 16px;
-  color: #555; /* Slightly lighter text */
-  line-height: 1.6; /* Line height for readability */
-}
-
-/* Pricing Section */
-#pricing {
-  background-color: #007aff; /* Blue background for the pricing section */
-  padding: 50px 20px; /* Padding around the pricing section */
-  text-align: center; /* Center the text */
-}
-
-#pricing h1 {
-  font-size: 36px;
-  font-weight: 700;
-  color: white; /* White text for the heading */
-  margin-bottom: 20px; /* Space below the heading */
-}
-
-#pricing button {
-  padding: 15px 30px; /* Padding for the button */
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  background-color: #0056b3; /* Darker blue for the button */
-  border: none;
-  border-radius: 5px; /* Rounded corners for the button */
-  cursor: pointer; /* Change cursor on hover */
-  transition: background-color 0.3s ease; /* Smooth transition on hover */
-}
-
-#pricing button:hover {
-  background-color: #003f6b; /* Even darker blue on hover */
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px; /* Padding for better spacing */
+  background-color: #fff; /* White background for the about text */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for the text box */
+  border-radius: 8px; /* Rounded corners for the text box */
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .feature {
-    flex-direction: column; /* Stack the feature items vertically on smaller screens */
-    align-items: center; /* Center the feature items */
+  .about-header {
+    height: 300px; /* Make the header shorter on smaller screens */
   }
 
-  .feature-item {
-    width: 80%; /* Make each feature item take up more space on smaller screens */
+  .header-text .headline {
+    font-size: 36px; /* Adjust font size for headline */
+  }
+
+  .header-text .author {
+    font-size: 18px; /* Adjust font size for author */
   }
 }
