@@ -70,6 +70,48 @@ nav {
   align-items: center; /* Center the items vertically within the bar */
 }
 
+/* Navigation Bar Styles */
+header {
+  width: 100%; /* Full width for header */
+  background-color: #007aff; /* Blue background for the nav bar */
+  padding: 15px 0; /* Vertical padding for spacing */
+  position: fixed; /* Fix the nav bar at the top */
+  top: 0; /* Align at the very top */
+  left: 0; /* Align to the left */
+  z-index: 1000; /* Ensure it's on top of other content */
+}
+
+nav {
+  display: flex; /* Flex layout for horizontal nav items */
+  justify-content: center; /* Center nav items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+ul {
+  display: flex; /* Flexbox for horizontal alignment of links */
+  list-style: none; /* Remove default list bullets */
+}
+
+ul li {
+  margin: 0 20px; /* Spacing between nav links */
+}
+
+ul li a {
+  text-decoration: none; /* Remove underlines */
+  color: white; /* White text color */
+  font-size: 18px; /* Font size for nav links */
+  font-weight: bold; /* Bold links */
+  padding: 8px 20px; /* Padding around the links */
+  display: inline-block; /* Make the link fill the entire li */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+ul li a:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  color: white; /* Ensure text stays white */
+  border-radius: 5px; /* Rounded corners on hover */
+}
+
 /* Features Section */
 #features {
     padding: 50px 0;
