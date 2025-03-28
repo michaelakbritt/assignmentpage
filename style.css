@@ -89,11 +89,6 @@ ul li a:hover {
   font-weight: 700; /* Bold font for the title */
 }
 
-.author {
-  font-size: 24px;
-  font-weight: 400; /* Regular font for the author */
-}
-
 /* About Section Styles */
 .outer {
   padding: 20px;
