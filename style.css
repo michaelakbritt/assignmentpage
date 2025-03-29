@@ -10,7 +10,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     background-color: #f8f8f7; /* Light background similar to Apple's */
     color: #333; /* Dark text for readability */
-    line-height: 1.8; /* Increase line-height for better text spacing */
+    line-height: 2; /* Increase line-height for better text spacing */
     padding: 0 20px; /* Padding to prevent elements from touching the edges */
 }
 
@@ -101,10 +101,10 @@ ul li a:hover {
 
 .about {
   font-size: 18px;
-  line-height: 1.9; /* Further increase line-height for better spacing */
+  line-height: 2.2; /* Further increase line-height for better spacing */
   color: #333;
   text-align: center;
-  margin-top: 30px; /* Increase space above the about section */
+  margin-top: 40px; /* Increase space above the about section */
   padding: 40px 20px; /* More padding for better spacing */
   background-color: #fff; /* White background for the about text */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for the text box */
