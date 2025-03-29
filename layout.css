@@ -203,6 +203,21 @@ button:hover {
     background-color: #005bb5; /* Darker blue on hover */
 }
 
+/* About Section Styles */
+.outer .about {
+  font-size: 18px;
+  line-height: 2.2; /* Further increase line-height for better spacing */
+  color: #333;
+  text-align: center;
+  margin-top: 40px; /* Increase space above the about section */
+  padding: 40px 20px; /* More padding for better spacing */
+  background-color: #fff; /* White background for the about text */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for the text box */
+  border-radius: 8px; /* Rounded corners for the text box */
+  margin-bottom: 60px; /* Increase space below the about box */
+  width: 100%; /* Ensure full width */
+}
+
 /* Responsive Layout */
 @media (max-width: 768px) {
     .feature {
