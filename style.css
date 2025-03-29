@@ -10,7 +10,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     background-color: #f8f8f7; /* Light background similar to Apple's */
     color: #333; /* Dark text for readability */
-    line-height: 1.7; /* Increase line-height for better text spacing */
+    line-height: 1.8; /* Increase line-height for better text spacing */
     padding: 0 20px; /* Padding to prevent elements from touching the edges */
 }
 
@@ -101,16 +101,20 @@ ul li a:hover {
 
 .about {
   font-size: 18px;
-  line-height: 1.8; /* Increase line-height for the about text for better spacing */
+  line-height: 1.9; /* Further increase line-height for better spacing */
   color: #333;
   text-align: center;
-  margin-top: 20px;
-  padding: 30px 20px; /* Added more padding for better spacing */
+  margin-top: 30px; /* Increase space above the about section */
+  padding: 40px 20px; /* More padding for better spacing */
   background-color: #fff; /* White background for the about text */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for the text box */
   border-radius: 8px; /* Rounded corners for the text box */
-  margin-bottom: 50px; /* Increased space below the about box */
+  margin-bottom: 60px; /* Increase space below the about box */
   width: 100%; /* Ensure full width */
+}
+
+.about p {
+  margin-bottom: 20px; /* Increase space between paragraphs */
 }
 
 /* Responsive Styles */
@@ -126,5 +130,10 @@ ul li a:hover {
   .about {
     font-size: 16px; /* Adjust font size for smaller screens */
     padding: 20px; /* Adjust padding for smaller screens */
+    margin-top: 20px; /* Reduce space on top for smaller screens */
+  }
+
+  .about p {
+    margin-bottom: 15px; /* Reduce space between paragraphs for smaller screens */
   }
 }
