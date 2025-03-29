@@ -121,6 +121,12 @@ button:hover {
     background-color: #005bb5;
 }
 
+.about {
+  padding: 40px 20px;
+  margin: 20px 0;
+  line-height: 1.8; /* Increase line height for better text spacing */
+}
+
 /* Responsive Layout for Tablets and Mobile Devices */
 @media (min-width: 768px) {
     /* Adjust grid layout for medium screens */
