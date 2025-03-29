@@ -104,7 +104,7 @@ ul li a:hover {
   line-height: 2.2; /* Further increase line-height for better spacing */
   color: #333;
   text-align: center;
-  margin-top: 40px; /* Increase space above the about section */
+  margin-top: 80px; /* Ensure space below the header */
   padding: 40px 20px; /* More padding for better spacing */
   background-color: #fff; /* White background for the about text */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for the text box */
@@ -130,7 +130,7 @@ ul li a:hover {
   .about {
     font-size: 16px; /* Adjust font size for smaller screens */
     padding: 20px; /* Adjust padding for smaller screens */
-    margin-top: 20px; /* Reduce space on top for smaller screens */
+    margin-top: 40px; /* Reduce space on top for smaller screens */
   }
 
   .about p {
